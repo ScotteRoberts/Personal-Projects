@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4790197412240852}
   - component: {fileID: 2569400266108611074}
   m_Layer: 31
-  m_Name: TestOverworldTiles
+  m_Name: TotalOverworldTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
