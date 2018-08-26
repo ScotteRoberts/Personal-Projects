@@ -7,6 +7,9 @@ TagManager:
   - Overworld
   - Enemy
   - NPC
+  - Ally
+  - Other
+  - Cursor
   layers:
   - Default
   - TransparentFX
@@ -16,10 +19,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Ally
+  - Enemy
+  - Npc
+  - Other
   - 
   - 
   - 
@@ -43,4 +46,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Terrain
+    uniqueID: 506092041
+    locked: 0
+  - name: Actors
+    uniqueID: 1782240267
+    locked: 0
+  - name: Cursor
+    uniqueID: 1030544515
     locked: 0
