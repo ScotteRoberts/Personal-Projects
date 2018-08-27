@@ -6,28 +6,40 @@ using UnityEngine;
 /// </summary>
 public class CursorController : MonoBehaviour
 {
-    //private GameObject m_Cursor;
+    // For Keyboard Input
     private Rigidbody2D m_MyRigidbody2D;
     private Grid m_Grid;
     private float m_NextMovementTime;
-    private const float m_SlowMovementPauseTime = 0.1f;
+    private const float m_SlowMovementPauseTime = 0.2f;
+    // Figure out how to do extra input to speed up the movement rate.
+    private const float m_FastMovementPauseTime = 0.1f;
 
+    // Events
+    public delegate void InputAction(Vector3 worldPoint, Vector2 tileAnchor);
+    public static event InputAction OnCursorMove;
+
+    // TODO @Movement Try to get rid of these fucking offsets without it looking bad.
     // For Mouse Clicks
     [SerializeField]
     private float m_XTileAnchor;
     [SerializeField]
     private float m_YTileAnchor;
-
-    // Figure out how to do extra input to speed up the movement rate.
-    private const float m_FastMovementPauseTime = 0.1f;
+    private Vector3 worldPoint;
+    private Vector2 tileAnchor;
 
     public void Start()
     {
-        // Not sure about setting the cursor like this..
-        //m_Cursor = GameObject.FindWithTag("Cursor");
+
         m_MyRigidbody2D = GetComponent<Rigidbody2D>();
         m_NextMovementTime = Time.time;
+        worldPoint = transform.position;
+        tileAnchor = new Vector2(m_XTileAnchor, m_YTileAnchor);
 
+        // Start off position
+        if (OnCursorMove != null)
+        {
+            OnCursorMove(worldPoint, tileAnchor);
+        }
     }
 
     public void Update()
@@ -42,32 +54,41 @@ public class CursorController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            var worldPoint = new Vector2(Mathf.FloorToInt(point.x) + m_XTileAnchor, Mathf.FloorToInt(point.y) + m_YTileAnchor);
+            worldPoint = new Vector3(Mathf.FloorToInt(point.x) + tileAnchor.x, 
+                                         Mathf.FloorToInt(point.y) + tileAnchor.y);
             transform.position = worldPoint;
 
-            //var tiles = GameGrid.instance.tiles; // This is our Dictionary of tiles
-
-            //if (tiles.TryGetValue(worldPoint, out _tile))
-            //{
-            //    print("Tile " + _tile.Name + " costs: " + _tile.Cost);
-            //    _tile.TilemapMember.SetTileFlags(_tile.LocalPlace, TileFlags.None);
-            //    _tile.TilemapMember.SetColor(_tile.LocalPlace, Color.green);
-            //}
+            // Fire Event
+            if (OnCursorMove != null)
+            {
+                OnCursorMove(worldPoint, tileAnchor);
+            }
         }
     }
 
     private void DirectionalMove()
     {
-        // Getting movement input for keys, mouse, and joystick.
-        // Need to find a way to move with rapid key clicks...
-        var input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        // TODO: @KeyMapping Figure out key mapping for fast and slow movement with keyboard / gamepad.
-        if (Time.time > m_NextMovementTime)
+        if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0 || 
+            Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0)
         {
-            var startPosition = transform.position;
-            m_NextMovementTime = Time.time + m_SlowMovementPauseTime;
-            m_MyRigidbody2D.MovePosition(new Vector2(startPosition.x + Mathf.Ceil(input.x), startPosition.y + Mathf.Ceil(input.y)));
+            // TODO: @KeyMapping Figure out key mapping for fast and slow movement with keyboard / gamepad.
+            if (Time.time > m_NextMovementTime)
+            {
+                m_NextMovementTime = Time.time + m_FastMovementPauseTime;
+
+                // Getting movement input for keys, mouse, and joystick.
+                // Need to find a way to move with rapid key clicks...
+                var input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+                worldPoint = new Vector3(transform.position.x + Mathf.Ceil(input.x),
+                                         transform.position.y + Mathf.Ceil(input.y));
+                transform.position = worldPoint;
+
+                // Fire Event
+                if (OnCursorMove != null)
+                {
+                    OnCursorMove(worldPoint, tileAnchor);
+                }
+            }
         }
     }
 

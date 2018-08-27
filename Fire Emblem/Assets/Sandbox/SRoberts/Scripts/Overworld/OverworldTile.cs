@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Tilemaps;
 
-public class WorldTile
+public class OverworldTile
 {
     public Vector3Int LocalPlace { get; set; }
 
@@ -16,7 +16,7 @@ public class WorldTile
     // Below is needed for Breadth First Searching
     public bool IsExplored { get; set; }
 
-    public WorldTile ExploredFrom { get; set; }
+    public OverworldTile ExploredFrom { get; set; }
 
     public int Cost { get; set; }
 }
