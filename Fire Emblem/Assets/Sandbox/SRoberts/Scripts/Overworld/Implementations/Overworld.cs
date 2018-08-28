@@ -11,10 +11,9 @@ public class Overworld : MonoBehaviour
     [SerializeField]
     private Tilemap[] tilemaps;
 
-    // Dictionary of (Grid location / tile)
-    public Dictionary<Vector3, OverworldTile> tiles;
-
-    // Singleton Logic
+    // (Grid location / tile)
+    private Dictionary<Vector3, OverworldTile> tiles;
+    
     private void Awake()
     {
         if (instance == null)
@@ -26,11 +25,16 @@ public class Overworld : MonoBehaviour
             Destroy(gameObject);
         }
 
-        GetOverworldTiles();
+        GenerateOverworldTiles();
+    }
+
+    public Dictionary<Vector3, OverworldTile> GetTiles()
+    {
+        return tiles;
     }
 
     // Use this for initialization
-    private void GetOverworldTiles()
+    private void GenerateOverworldTiles()
     {
         tiles = new Dictionary<Vector3, OverworldTile>();
         foreach (Tilemap map in tilemaps)
@@ -48,12 +52,12 @@ public class Overworld : MonoBehaviour
                     WorldLocation = map.CellToWorld(localPlace),
                     TileBase = map.GetTile(localPlace),
                     TilemapMember = map,
-                    Name = localPlace.x + "," + localPlace.y,
+                    Name = OverworldTileTypes.Plain,
                     Cost = 1 // TODO: Change this with the proper cost from ruletile
                 };
 
                 // Update or Add new tiles to running list
-                if(tiles.ContainsKey(tile.WorldLocation))
+                if (tiles.ContainsKey(tile.WorldLocation))
                 {
                     tiles[tile.WorldLocation] = tile;
                 }
@@ -63,6 +67,5 @@ public class Overworld : MonoBehaviour
                 }
             }
         }
-
     }
 }

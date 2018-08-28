@@ -1,34 +1,23 @@
 fileFormatVersion: 2
-guid: b92b0a1d4ed5c42a48bbeee6f546fedc
+guid: fc15169f3b22c4e6ea71ad5c4b87ad1f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SafariClearDayPlains_0
-    21300002: SafariClearDayPlains_1
-    21300004: SafariClearDayPlains_2
-    21300006: SafariClearDayPlains_3
-    21300008: SafariClearDayPlains_4
-    21300010: SafariClearDayPlains_5
-    21300012: SafariClearDayPlains_6
-    21300014: SafariClearDayPlains_7
-    21300016: SafariClearDayPlains_8
-    21300018: SafariClearDayPlains_9
-    21300020: SafariClearDayPlains_10
-    21300022: SafariClearDayPlains_11
-    21300024: SafariClearDayPlains_12
-    21300026: SafariClearDayPlains_13
-    21300028: SafariClearDayPlains_14
-    21300030: SafariClearDayPlains_15
-    21300032: SafariClearDayPlains_16
-    21300034: SafariClearDayPlains_17
-    21300036: SafariClearDayPlains_18
-    21300038: SafariClearDayPlains_19
-    21300040: SafariClearDayPlains_20
-    21300042: SafariClearDayPlains_21
-    21300044: SafariClearDayPlains_22
-    21300046: SafariClearDayPlains_23
-    21300048: SafariClearDayPlains_24
-    21300050: SafariClearDayPlains_25
-    21300052: SafariClearDayPlains_26
+    21300000: Night_0
+    21300002: Night_1
+    21300004: Night_2
+    21300006: Night_3
+    21300008: Night_4
+    21300010: Night_5
+    21300012: Night_6
+    21300014: Night_7
+    21300016: Night_8
+    21300018: Night_9
+    21300020: Night_10
+    21300022: Night_11
+    21300024: Night_12
+    21300026: Night_13
+    21300028: Night_14
+    21300030: Night_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -68,7 +57,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -111,247 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SafariClearDayPlains_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45d33900e7d624ff7ac89e6b420bef86
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3257e5aab6d6d445f8990512ca2a92ea
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0037871b3551b485c8fd231088dda184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0688e28ed59fe46e79e08c53764acf99
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b3b4dd6cb5e94390bd88a0c7ed78dcb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98ddc442fb7af48ed8b830de000bfb57
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1157c30c6b32410db95144fc4ba5ba8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_7
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec0f29bd450994b189f5b43fa5dc0e10
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_8
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f6cafa0cedc24c1ba02cd1660f9d0b3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_9
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 979155ec54ba14fc2a37edf81ae0a0d3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d66528c90ae034927bf7b817cc5a03cb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_11
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 767c13c29844542b2a1cd3f98250ff6d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_12
+      name: Night_0
       rect:
         serializedVersion: 2
         x: 0
@@ -365,13 +114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e7329d67cb0841f8aad73058806eff5
+      spriteID: c35bb93e208344dc0b8e8bc55ca717cd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_13
+      name: Night_1
       rect:
         serializedVersion: 2
         x: 16
@@ -385,13 +134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 174c5b425879b42a1b309718f4643df9
+      spriteID: 8ef41cac0bc1347549fd9039bab685cb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_14
+      name: Night_2
       rect:
         serializedVersion: 2
         x: 32
@@ -405,13 +154,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc5cf46f1b9f04626a02643e521c9d21
+      spriteID: 5ce14a3e9975646dd97c8e4d6207e551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_15
+      name: Night_3
       rect:
         serializedVersion: 2
         x: 48
@@ -425,53 +174,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e313d489e2dd440aa06705612fd45db
+      spriteID: d3c3795efe8f541319eedf3389124a44
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_16
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3bee6d533385f498aa1f6d14af615c09
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_17
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1602b9851ab984b529d49e241847b573
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SafariClearDayPlains_18
+      name: Night_4
       rect:
         serializedVersion: 2
         x: 0
@@ -485,13 +194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e86edc7a2e0d4002b7e182de65939aa
+      spriteID: 7c98ebab7df194572a043af1e05ba9a7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_19
+      name: Night_5
       rect:
         serializedVersion: 2
         x: 16
@@ -505,13 +214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5322db2ad3f7a4184904f5c00bf3446a
+      spriteID: b08584384f8e547eeb4c296da15b39c7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_20
+      name: Night_6
       rect:
         serializedVersion: 2
         x: 32
@@ -525,13 +234,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86cb6573156c44aba982fdf714048a99
+      spriteID: ed11831f94e70403291daa9f846243a3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_21
+      name: Night_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22ed524382454415901cd4b0c00921e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Night_8
       rect:
         serializedVersion: 2
         x: 0
@@ -545,13 +274,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a99041b6174e4926bd1751fe4ecc88f
+      spriteID: ed7631ad92a57471ca72231d1deee346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_22
+      name: Night_9
       rect:
         serializedVersion: 2
         x: 16
@@ -565,13 +294,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 591daab817f494e849ae78ae84cf79d4
+      spriteID: cc6745fdd524842769174c425f5ee5c0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_23
+      name: Night_10
       rect:
         serializedVersion: 2
         x: 32
@@ -585,13 +314,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25810f6b1250640fcb7386bcb10e2e51
+      spriteID: a1f063647cf114c17a29e53782860a72
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_24
+      name: Night_11
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d911100678d2b41a1990922ab9bb2a32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Night_12
       rect:
         serializedVersion: 2
         x: 0
@@ -605,13 +354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b23fbef1a555485dbcbee4095393368
+      spriteID: b935737e893db4ba78063706c1fba1e8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_25
+      name: Night_13
       rect:
         serializedVersion: 2
         x: 16
@@ -625,13 +374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 504e51b28116e476391253585a5d4558
+      spriteID: 421168e3cf58e496a9ff5032ce4cd2e4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SafariClearDayPlains_26
+      name: Night_14
       rect:
         serializedVersion: 2
         x: 32
@@ -645,7 +394,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69eb7fbe9fee34b7ba8d3fe84e8d1660
+      spriteID: 9b0feee6100294815ab3baf4eba572f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Night_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28ef612dfd8a488db8ab3c06ae30877
       vertices: []
       indices: 
       edges: []
@@ -653,7 +422,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e94d88b1947e4df5b0b6bce25aab869
+    spriteID: c66ecc8245c084e9a94dbf562f4a43a0
     vertices: []
     indices: 
     edges: []

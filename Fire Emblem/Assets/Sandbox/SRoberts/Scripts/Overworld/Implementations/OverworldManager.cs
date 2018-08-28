@@ -10,18 +10,18 @@ public class OverworldManager : MonoBehaviour {
 
     private void OnEnable()
     {
-        CursorController.OnCursorMove += DisplayTileData;
+        OverworldCursorController.OnCursorMove += DisplayTileData;
     }
     private void OnDisable()
     {
-        CursorController.OnCursorMove -= DisplayTileData;
+        OverworldCursorController.OnCursorMove -= DisplayTileData;
     }
 
     private void DisplayTileData(Vector3 worldPoint, Vector2 tileAnchor)
     {
         Vector3Int localPoint = new Vector3Int(Mathf.FloorToInt(worldPoint.x - tileAnchor.x),
                                                Mathf.FloorToInt(worldPoint.y - tileAnchor.y), 0);
-        var tiles = Overworld.instance.tiles; // This is our Dictionary of tiles
+        var tiles = Overworld.instance.GetTiles(); // This is our Dictionary of tiles
 
         Debug.Log(worldPoint);
 

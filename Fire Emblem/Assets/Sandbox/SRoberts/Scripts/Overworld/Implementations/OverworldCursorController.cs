@@ -4,11 +4,11 @@ using UnityEngine;
 /// <summary>
 /// Cursor controller.
 /// </summary>
-public class CursorController : MonoBehaviour
+// TODO @Movement Does not account for other planes than the XY Axis.
+public class OverworldCursorController : MonoBehaviour
 {
     // For Keyboard Input
     private Rigidbody2D m_MyRigidbody2D;
-    private Grid m_Grid;
     private float m_NextMovementTime;
     private const float m_SlowMovementPauseTime = 0.2f;
     // Figure out how to do extra input to speed up the movement rate.
@@ -81,7 +81,7 @@ public class CursorController : MonoBehaviour
                 var input = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
                 worldPoint = new Vector3(transform.position.x + Mathf.Ceil(input.x),
                                          transform.position.y + Mathf.Ceil(input.y));
-                transform.position = worldPoint;
+                m_MyRigidbody2D.MovePosition(worldPoint);
 
                 // Fire Event
                 if (OnCursorMove != null)

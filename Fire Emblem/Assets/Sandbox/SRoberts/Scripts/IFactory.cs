@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IActor
-{
-    void Move();
-    void Attack();
+public interface IFactory<T> where T: class {
 
+    T Create(string type);
 }
