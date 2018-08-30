@@ -22,6 +22,8 @@ public class OverworldTile : IOverworldTile
     public int Cost { get; set; }
 
     // Game:
+    public bool IsMoveable { get; set; }
+
     public int MovementCost { get; set; }
 
     public int DefenceBonus { get; set; }
