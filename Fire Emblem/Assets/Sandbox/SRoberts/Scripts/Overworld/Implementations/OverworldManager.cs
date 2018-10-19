@@ -29,24 +29,11 @@ public class OverworldManager : MonoBehaviour {
 
     private void OnEnable()
     {
-        OverworldCursorMovement.OnCursorMove += DisplayTileData;
+        OverworldCursorController.OnCursorMove += DisplayTileData;
     }
     private void OnDisable()
     {
-        OverworldCursorMovement.OnCursorMove -= DisplayTileData;
-    }
-
-    private void DisplayTileData(Vector3Int localPoint)
-    {
-        var tiles = Overworld.GetInstance().GetTiles(); // This is our Dictionary of tiles
-
-        if (tiles.TryGetValue(localPoint, out _tile))
-        {
-            print("Tile " + _tile.Name + " x: " + _tile.LocalPlace.x + " y: "+
-                  _tile.LocalPlace.y + " costs: " + _tile.Cost);
-            _tile.TilemapMember.SetTileFlags(_tile.LocalPlace, TileFlags.None);
-            _tile.TilemapMember.SetColor(_tile.LocalPlace, Color.cyan);
-        }
+        OverworldCursorController.OnCursorMove -= DisplayTileData;
     }
 
     public static OverworldManager GetInstance() { return instance; }
@@ -64,5 +51,19 @@ public class OverworldManager : MonoBehaviour {
     public Vector3 RemoveTilemapAnchor(Vector3 point)
     {
         return point - tilemapAnchor;
+    }
+
+    // Thank you to Medium article writter for this method of tile testing.
+    private void DisplayTileData(Vector3Int localPoint)
+    {
+        var tiles = Overworld.GetInstance().GetTiles(); // This is our Dictionary of tiles
+
+        if (tiles.TryGetValue(localPoint, out _tile))
+        {
+            print("Tile " + _tile.Name + " x: " + _tile.LocalPlace.x + " y: "+
+                  _tile.LocalPlace.y + " costs: " + _tile.Cost);
+            _tile.TilemapMember.SetTileFlags(_tile.LocalPlace, TileFlags.None);
+            _tile.TilemapMember.SetColor(_tile.LocalPlace, Color.cyan);
+        }
     }
 }
