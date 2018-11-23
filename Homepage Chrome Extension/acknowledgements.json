@@ -1,0 +1,51 @@
+{
+  "imageReferences": {
+    "flatIcon": [
+      {
+        "title": "Like16",
+        "author": "Flat Icon",
+        "url": "https://www.flaticon.com/search?word=like"
+      },
+      {
+        "title": "Like32",
+        "author": "Flat Icon",
+        "url": "https://www.flaticon.com/search?word=like"
+      },
+      {
+        "title": "Like128",
+        "author": "Flat Icon",
+        "url": "https://www.flaticon.com/search?word=like"
+      }
+    ],
+    "unsplash": [
+      {
+        "title": "lacie-slezak-526166-unsplash.jpg",
+        "author": "Lacie Slezak",
+        "url": "https://unsplash.com/photos/7yqyQQXgOT8"
+      }
+    ],
+    "4vector": [
+      {
+        "title": "favicon.ico",
+        "author": "4vector",
+        "url": "https://4vector.com/iraw/free-vector-sr_063246_sr.png"
+      }
+    ]
+  },
+  "tutorialReferences": {
+    "google": [
+      {
+        "title": "What are extensions?",
+        "author": "Google Developers",
+        "url": "https://developer.chrome.com/extensions"
+      }
+    ],
+    "medium": [
+      {
+        "title": "Best HTML, CSS, Javascript Practice : Chrome Extension",
+        "author": "Jungwon Sea",
+        "url": "https://medium.com/@thejungwon/best-html-css-javascript-practice-chrome-extension-ae4e5e7839e"
+      }
+    ]
+  }
+}
