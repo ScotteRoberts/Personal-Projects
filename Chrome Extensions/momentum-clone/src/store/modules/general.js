@@ -1,4 +1,9 @@
-const state = {};
+const state = {
+  customize: {
+    theme: "",
+    font: ""
+  }
+};
 
 const mutations = {};
 
@@ -10,5 +15,6 @@ export default {
   state,
   mutations,
   actions,
-  getters
+  getters,
+  namespaced: true
 };

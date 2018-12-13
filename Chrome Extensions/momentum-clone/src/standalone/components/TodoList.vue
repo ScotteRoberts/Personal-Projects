@@ -19,7 +19,7 @@
             autocomplete="off"
             placeholder="What needs to be done?"
             v-model="newTodo"
-            @keyup.enter="addTodo"
+            @keyup.enter="addTodo(newTodo)"
           >
         </p>
       </div>
@@ -28,26 +28,47 @@
     <!-- DEV: ToDo items with filters -->
 
     <body v-show="todos.length">
-      <label
+      <div
         v-for="todo in filteredTodos"
-        class="panel-block"
         :key="todo.id"
+        @dblclick="editTodo(todo)"
       >
-        <input
-          type="checkbox"
-          v-model="todo.completed"
+        <div
+          class="panel-block"
+          v-if="editedTodo != todo"
         >
-        <p
-          class="control"
-          :class="{ strike: todo.completed}"
+          <input
+            type="checkbox"
+            v-model="todo.completed"
+          >
+          <p
+            class="control"
+            :class="{ strike: todo.completed}"
+          >
+            {{ todo.title }}
+          </p>
+          <button
+            class="delete"
+            @click="removeTodo(todo)"
+          ></button>
+        </div>
+        <div
+          class="panel-block"
+          v-else
         >
-          {{ todo.title }}
-        </p>
-        <button
-          class="delete"
-          @click="removeTodo(todo)"
-        ></button>
-      </label>
+          <input
+            class="control is-expanded"
+            type="text"
+            v-model="todo.title"
+            v-todo-focus="todo == editedTodo"
+            @blur="doneEdit(todo)"
+            @keyup.enter="doneEdit(todo)"
+            @keyup.esc="cancelEdit(todo)"
+          >
+        </div>
+
+      </div>
+
       <p class="panel-tabs">
         <a
           @click="onFilterChange('all')"
@@ -75,7 +96,7 @@
         >
           <!-- DEV: Clear Completed ToDos -->
           <button
-            class="button is-small"
+            class="button"
             @click="removeCompleted"
           >
             Clear Completed
@@ -87,73 +108,23 @@
 </template>
 
 <script>
+import { mapState, mapActions, mapGetters } from "vuex";
 // Full spec-compliant TodoMVC with localStorage persistence
 // and hash-based routing in ~120 effective lines of JavaScript.
 
-// localStorage persistence
-var STORAGE_KEY = "todos-vuejs-2.0";
-var todoStorage = {
-  fetch: function() {
-    var todos = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-    todos.forEach(function(todo, index) {
-      todo.id = index;
-    });
-    todoStorage.uid = todos.length;
-    return todos;
-  },
-  save: function(todos) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
-  }
-};
-
-// visibility filters
-var filters = {
-  all: function(todos) {
-    return todos;
-  },
-  active: function(todos) {
-    return todos.filter(function(todo) {
-      return !todo.completed;
-    });
-  },
-  completed: function(todos) {
-    return todos.filter(function(todo) {
-      return todo.completed;
-    });
-  }
-};
-
 // vue component instance
 export default {
-  // app initial state
   data() {
     return {
-      todos: todoStorage.fetch(),
       newTodo: "",
-      editedTodo: null,
-      visibility: "all"
+      editedTodo: ""
     };
   },
-
-  // watch todos change for localStorage persistence
-  watch: {
-    todos: {
-      handler: function(todos) {
-        todoStorage.save(todos);
-      },
-      deep: true
-    }
-  },
-
   // computed properties
   // http://vuejs.org/guide/computed.html
   computed: {
-    filteredTodos: function() {
-      return filters[this.visibility](this.todos);
-    },
-    remaining: function() {
-      return filters.active(this.todos).length;
-    },
+    ...mapState("todo", ["todos", "visibility"]),
+    ...mapGetters("todo", ["filteredTodos", "remaining"]),
     allDone: {
       get: function() {
         return this.remaining === 0;
@@ -175,22 +146,11 @@ export default {
   // methods that implement data logic.
   // note there's no DOM manipulation here at all.
   methods: {
-    addTodo: function() {
-      var value = this.newTodo && this.newTodo.trim();
-      if (!value) {
-        return;
-      }
-      this.todos.push({
-        id: todoStorage.uid++,
-        title: value,
-        completed: false
-      });
+    addTodo: function(todo) {
+      this.$store.dispatch("todo/addTodo", todo);
       this.newTodo = "";
     },
-
-    removeTodo: function(todo) {
-      this.todos.splice(this.todos.indexOf(todo), 1);
-    },
+    ...mapActions("todo", ["removeTodo", "onFilterChange", "removeCompleted"]),
 
     editTodo: function(todo) {
       this.beforeEditCache = todo.title;
@@ -211,18 +171,6 @@ export default {
     cancelEdit: function(todo) {
       this.editedTodo = null;
       todo.title = this.beforeEditCache;
-    },
-
-    onFilterChange: function(visibility) {
-      if (filters[visibility]) {
-        this.visibility = visibility;
-      } else {
-        this.visibility = "all";
-      }
-    },
-
-    removeCompleted: function() {
-      this.todos = filters.active(this.todos);
     }
   }
 };

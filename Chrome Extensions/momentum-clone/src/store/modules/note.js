@@ -1,4 +1,6 @@
-const state = {};
+const state = {
+  show: false
+};
 
 const mutations = {};
 
@@ -10,5 +12,6 @@ export default {
   state,
   mutations,
   actions,
-  getters
+  getters,
+  namespaced: true
 };
