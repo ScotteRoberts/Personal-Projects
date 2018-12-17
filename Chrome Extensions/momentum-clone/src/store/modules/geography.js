@@ -1,23 +1,27 @@
-const state = {
-  currentLocation: {
-    zipCode: "",
-    latitude: null,
-    longitude: null,
-    city: "",
-    state: "",
-    timezone: {
-      timezoneIdentifier: "",
-      timezoneAbbreviation: "",
-      utcOffsetSec: null,
-      isDst: ""
-    },
-    acceptableCityNames: []
-    // {
-    //   city: "",
-    //   state: ""
-    // }
-  }
+const getDefaultState = () => {
+  return {
+    currentLocation: {
+      zipCode: "",
+      latitude: null,
+      longitude: null,
+      city: "",
+      state: "",
+      timezone: {
+        timezoneIdentifier: "",
+        timezoneAbbreviation: "",
+        utcOffsetSec: null,
+        isDst: ""
+      },
+      acceptableCityNames: []
+      // {
+      //   city: "",
+      //   state: ""
+      // }
+    }
+  };
 };
+
+const state = getDefaultState();
 
 const zipCodeApiTransformer = function(location) {
   return {
@@ -38,23 +42,25 @@ const zipCodeApiTransformer = function(location) {
 
 const mutationTypes = {
   SET_ZIP_CODE: "SET_ZIP_CODE",
-  SET_LOCATION: "SET_LOCATION"
+  SET_LOCATION: "SET_LOCATION",
+  RESET_GEOGRAPHY_MODULE: "RESET_GEOGRAPHY_MODULE"
 };
 
 const mutations = {
   [mutationTypes.SET_ZIP_CODE](state, zipCode) {
     state.currentLocation.zipCode = zipCode;
   },
-  [mutationTypes.SET_LOCATION](state, location) {
-    state.currentLocation = location;
+  [mutationTypes.SET_LOCATION](state, transformedLocation) {
+    state.currentLocation = JSON.parse(JSON.stringify(transformedLocation));
+  },
+  [mutationTypes.RESET_GEOGRAPHY_MODULE](state) {
+    Object.assign(state, getDefaultState());
   }
 };
 
 const actions = {
-  setZipCode: ({ commit }, zipCode) => {
-    commit(mutationTypes.SET_ZIP_CODE, zipCode);
-    // Make an API call to Zip Code API with "zipCode"
-    let transformedLocation = zipCodeApiTransformer(location);
+  setLocation: ({ commit }, locationData) => {
+    let transformedLocation = zipCodeApiTransformer(locationData);
     commit(mutationTypes.SET_LOCATION, transformedLocation);
   }
 };

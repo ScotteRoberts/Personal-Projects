@@ -14,14 +14,17 @@ export default {
 </script>
 
 <style lang="scss">
+/* Uses Bulma.css for styling */
 /*  
 HACK: This was the only way I could find to import Bulma Extensions!!! 
 Look later if you want to import more than just the divider
 */
 @import "~bulma-extensions/dist/css/bulma-extensions.min.css";
 
-html,
-body {
-  height: 100%;
+/* 
+  Sets the element to the bottom of the parent 
+*/
+.is-pulled-down {
+  margin-top: auto;
 }
 </style>

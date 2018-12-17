@@ -12,7 +12,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "SearchInput"
+};
 </script>
 
 <style scoped lang="scss">

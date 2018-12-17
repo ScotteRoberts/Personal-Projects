@@ -1,7 +1,10 @@
 <template>
   <!-- DEV: Full Page Background -->
 
-  <div class="hero is-fullheight has-bg-img">
+  <div
+    class="hero is-fullheight has-bg-img"
+    :style="{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(' + imageUrl + ')' }"
+  >
     <!-- Hero head: will stick at the top -->
     <header class="hero-head">
       <default-header />
@@ -23,24 +26,26 @@
 
 <script>
 import { mapActions, mapState } from "vuex";
-import DefaultHeader from "@/standalone/components/DefaultHeader";
-import DefaultGreeting from "@/standalone/components/DefaultGreeting";
-import DefaultFooter from "@/standalone/components/DefaultFooter";
+import DefaultHeader from "@/standalone/layouts/default/Header";
+import DefaultGreeting from "@/standalone/layouts/default/Greeting";
+import DefaultFooter from "@/standalone/layouts/default/Footer";
 
 export default {
+  data() {
+    return {};
+  },
+  computed: {
+    ...mapState("photo", {
+      imageUrl: state => state.currentPhoto.urls.full
+    })
+  },
   components: {
     DefaultHeader,
     DefaultGreeting,
     DefaultFooter
   },
-  computed: {
-    ...mapState([])
-  },
   methods: {
     ...mapActions([])
-  },
-  data() {
-    return {};
   },
   mounted() {
     chrome.runtime.sendMessage({});
@@ -49,17 +54,16 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
+/* Uses Bulma.css for styling */
+$defaultImageUrl: "https://unsplash.com/photos/hL00JvJZHYA";
+
 .has-bg-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../../../../public/img/unsplash/lacie-slezak-214673-unsplash.jpg");
+    url($defaultImageUrl);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.is-right {
-  float: right;
 }
 </style>

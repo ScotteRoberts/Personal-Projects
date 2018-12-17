@@ -114,6 +114,7 @@ import { mapState, mapActions, mapGetters } from "vuex";
 
 // vue component instance
 export default {
+  name: "TodoList",
   data() {
     return {
       newTodo: "",

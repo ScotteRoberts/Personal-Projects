@@ -27,6 +27,11 @@
         "title": "Remove padding from columns in Bootstrap 3",
         "author": "MackieeE",
         "url": "https://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3"
+      },
+      {
+        "title": "Vue.js data-bind style backgroundImage not working",
+        "author": "David K. Hess",
+        "url": "https://stackoverflow.com/questions/35242272/vue-js-data-bind-style-backgroundimage-not-working"
       }
     ],
     "github": [
@@ -111,6 +116,13 @@
         "title": "Build a Simple Todo App with Vue.js and Vuex 2.0",
         "author": "paadams",
         "url": "https://codeburst.io/build-a-simple-todo-app-with-vue-js-1778ae175514"
+      }
+    ],
+    "codeMentor.io": [
+      {
+        "title": "How to create a plugin in Vue.js",
+        "author": "Chidiebere Nnadi",
+        "url": "https://www.codementor.io/chidieberennadi558/how-to-create-a-plugin-in-vue-js-ehdmg125e"
       }
     ]
   }

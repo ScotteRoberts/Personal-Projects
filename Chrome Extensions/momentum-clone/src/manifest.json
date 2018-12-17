@@ -4,9 +4,9 @@
   "homepage_url": "https://github.com/ScotteRoberts/Personal-Projects",
   "description": "A Vue Browser Extension",
   "icons": {
-    "16": "img/icons/16.png",
-    "48": "img/icons/48.png",
-    "128": "img/icons/128.png"
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
   },
   "permissions": ["activeTab", "<all_urls>", "storage", "*://*/*"],
   "background": {
@@ -20,8 +20,8 @@
     "default_popup": "popup/popup.html",
     "default_title": "momentum-clone",
     "default_icon": {
-      "19": "img/icons/19.png",
-      "38": "img/icons/38.png"
+      "16": "icons/16.png",
+      "48": "icons/48.png"
     }
   },
   "options_ui": {

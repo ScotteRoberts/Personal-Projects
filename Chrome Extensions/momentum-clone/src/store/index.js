@@ -1,17 +1,18 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import VuexPersistence from "vuex-persist";
+import "../plugins/axios";
 
 // Modules
 // Core
 import auth from "./modules/auth";
+import geography from "./modules/geography";
 import request from "./modules/request";
 import time from "./modules/time";
 // Content
 import account from "./modules/account";
 import focus from "./modules/focus";
 import general from "./modules/general";
-import geography from "./modules/geography";
 import link from "./modules/link";
 import mantra from "./modules/mantra";
 import note from "./modules/note";
