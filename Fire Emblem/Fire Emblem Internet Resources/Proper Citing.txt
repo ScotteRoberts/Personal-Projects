@@ -1,6 +1,0 @@
-How to properly find the sourcing for each of the files:
-	- Right Click on the file
-	- Get Info
-	- More Info
-
-Each of the files should have the original source of the file. If the file is from an odd source, some further investigation may be required.

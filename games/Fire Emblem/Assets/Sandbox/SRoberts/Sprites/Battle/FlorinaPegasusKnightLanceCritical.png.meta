@@ -1,0 +1,1086 @@
+fileFormatVersion: 2
+guid: 98bf2068396394d3284279cefbeed62b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FlorinaPegasusKnightLanceCritical_0
+    21300002: FlorinaPegasusKnightLanceCritical_1
+    21300004: FlorinaPegasusKnightLanceCritical_2
+    21300006: FlorinaPegasusKnightLanceCritical_3
+    21300008: FlorinaPegasusKnightLanceCritical_4
+    21300010: FlorinaPegasusKnightLanceCritical_5
+    21300012: FlorinaPegasusKnightLanceCritical_6
+    21300014: FlorinaPegasusKnightLanceCritical_7
+    21300016: FlorinaPegasusKnightLanceCritical_8
+    21300018: FlorinaPegasusKnightLanceCritical_9
+    21300020: FlorinaPegasusKnightLanceCritical_10
+    21300022: FlorinaPegasusKnightLanceCritical_11
+    21300024: FlorinaPegasusKnightLanceCritical_12
+    21300026: FlorinaPegasusKnightLanceCritical_13
+    21300028: FlorinaPegasusKnightLanceCritical_14
+    21300030: FlorinaPegasusKnightLanceCritical_15
+    21300032: FlorinaPegasusKnightLanceCritical_16
+    21300034: FlorinaPegasusKnightLanceCritical_17
+    21300036: FlorinaPegasusKnightLanceCritical_18
+    21300038: FlorinaPegasusKnightLanceCritical_19
+    21300040: FlorinaPegasusKnightLanceCritical_20
+    21300042: FlorinaPegasusKnightLanceCritical_21
+    21300044: FlorinaPegasusKnightLanceCritical_22
+    21300046: FlorinaPegasusKnightLanceCritical_23
+    21300048: FlorinaPegasusKnightLanceCritical_24
+    21300050: FlorinaPegasusKnightLanceCritical_25
+    21300052: FlorinaPegasusKnightLanceCritical_26
+    21300054: FlorinaPegasusKnightLanceCritical_27
+    21300056: FlorinaPegasusKnightLanceCritical_28
+    21300058: FlorinaPegasusKnightLanceCritical_29
+    21300060: FlorinaPegasusKnightLanceCritical_30
+    21300062: FlorinaPegasusKnightLanceCritical_31
+    21300064: FlorinaPegasusKnightLanceCritical_32
+    21300066: FlorinaPegasusKnightLanceCritical_33
+    21300068: FlorinaPegasusKnightLanceCritical_34
+    21300070: FlorinaPegasusKnightLanceCritical_35
+    21300072: FlorinaPegasusKnightLanceCritical_36
+    21300074: FlorinaPegasusKnightLanceCritical_37
+    21300076: FlorinaPegasusKnightLanceCritical_38
+    21300078: FlorinaPegasusKnightLanceCritical_39
+    21300080: FlorinaPegasusKnightLanceCritical_40
+    21300082: FlorinaPegasusKnightLanceCritical_41
+    21300084: FlorinaPegasusKnightLanceCritical_42
+    21300086: FlorinaPegasusKnightLanceCritical_43
+    21300088: FlorinaPegasusKnightLanceCritical_44
+    21300090: FlorinaPegasusKnightLanceCritical_45
+    21300092: FlorinaPegasusKnightLanceCritical_46
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 763
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe471a4b3fc74f0babbc80afb60fba1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 763
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc82c229f6c80475fb23d0161fa91676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 763
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1e02ddce8954a5fa9a6a9d1bd5b757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_3
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 763
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c459006c98f524b38922579f31cc2654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_4
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 763
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677f1ddaa9d4c4858aae848341248788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_5
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 763
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d6f682d222a46dd80c989fba50484e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 654
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5135cb09b983473096be59245a27426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 654
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a8bf0612d6547e683ed72c40c16c7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_8
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 654
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1a2075de4e3447db50e60b948800b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 654
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867d34284e92a4860b1b5f4a35b5366a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_10
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 654
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c37fe9b3f3d14df79e012230c91f2cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_11
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 654
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d059c72972d43490e86d9b4852977e3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 545
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4eb30a6938345f6953d3b7dc2ae36f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_13
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 545
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c9c5238c3b7498682d5a0da7c2450c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 545
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb7399839c814fad8e0f1fba44678db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_15
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 545
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f636abfc597e4f22a304cb2bb99a8ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_16
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 545
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec50eb0a31934a159e2e5634d20ed44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_17
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 545
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a625779f5684548d1802bf64fd58f3dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 436
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a084457a64e47c0bcbfb0d0c197260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 436
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e4a3e15ca9e459a8b1754329abd2ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_20
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 436
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4169352e34a77452b9e6ea214b1f07c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_21
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 436
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb644fb0133bb4873946c4e458ea4f88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_22
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 436
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fea8b97e5384174bb6bb9cde65f3ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_23
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 436
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b346da8080def460ea6e973ced66f6c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 327
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f70dd78e8bca44419d55cfda746a85b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_25
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 327
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8565f060851b497f8122841b118d8ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_26
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 327
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaae9da02f0741b58703bcad802469e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_27
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 327
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e85a49be59d440fd9dd5bcd25ca4549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_28
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 327
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ff21573040949b0b7c1664f1a4c730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_29
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 327
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446fe7e1a060245699c751ab949826a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b717f8f6b430e40d0a027ccc4874159d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_31
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 218
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45b72585ee984292a358c67f29cd9ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_32
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 218
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119c1b1f270f046b4ab391cca819cc5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_33
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 218
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4243580e52cda46548611bb21b7b77cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_34
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 218
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5146072e411f44439a7c949902d47712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_35
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 218
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d750605adffc84561a68a798eb822ffc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f71127f86a82482197b894ed7f6ad66
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_37
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 109
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b44dde5135f6488f977b280ee53f7c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_38
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 109
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b627bb7ca4774cf2ace567c6e7bd0eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_39
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 109
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e97cbb4599d04d77a4959a6244a2527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_40
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 109
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546a79d8f4d2944eb80ad63fbf72a61c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_41
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 109
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c59b6eac91a3496b89ce4f2f4e7b783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2025715219f140028749c62949e3a04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_43
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 0
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9013e7151695f42819a570d7dcf35b07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_44
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bba65079bdb425590420ef09763dae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_45
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531d69db865194460972a9948bc0b816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlorinaPegasusKnightLanceCritical_46
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ed89231e4b24abfb78bf85201f5b76
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 96caf7361c515432aaef5e2d75d0e9aa
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
