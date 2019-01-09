@@ -60,7 +60,7 @@ export default {
     }
   },
   mounted() {
-    getQOTD();
+    this.getQOTD();
   }
 };
 </script>
