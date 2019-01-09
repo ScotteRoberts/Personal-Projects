@@ -11,11 +11,10 @@ const filters = {
     return links;
   }
 };
-const SET_SHOW_LINKS = "SET_SHOW_LINKS";
 
 const mutationTypes = {
   // Links
-  //SET_SHOW_LINKS: "SET_SHOW_LINKS",
+  SET_SHOW_LINKS: "SET_SHOW_LINKS",
   ADD_NEW_LINK: "ADD_NEW_LINK",
   REMOVE_LINK: "REMOVE_LINK",
   REMOVE_COMPLETED_LINKS: "REMOVE_COMPLETED_LINKS",
@@ -23,7 +22,7 @@ const mutationTypes = {
 };
 
 const mutations = {
-  [SET_SHOW_LINKS](state, showLinks) {
+  [mutationTypes.SET_SHOW_LINKS](state, showLinks) {
     state.showLinks = showLinks;
   },
   [mutationTypes.ADD_NEW_LINK](state, newLink) {
@@ -47,7 +46,7 @@ const mutations = {
 
 const actions = {
   setShowLinks: ({ commit }, showLinks) => {
-    commit(SET_SHOW_LINKS, showLinks);
+    commit(mutationTypes.SET_SHOW_LINKS, showLinks);
   },
   addLink: ({ commit }, newLink) => {
     let title = newLink.title && newLink.title.trim();

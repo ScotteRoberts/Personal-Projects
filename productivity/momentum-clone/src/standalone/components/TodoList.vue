@@ -109,10 +109,11 @@
 
 <script>
 import { mapState, mapActions, mapGetters } from "vuex";
-// Full spec-compliant TodoMVC with localStorage persistence
-// and hash-based routing in ~120 effective lines of JavaScript.
-
-// vue component instance
+/**
+ * Full spec-compliant TodoMVC with localStorage persistence
+ *
+ * Adaptation from Evan Yu's Vue.js MVCTODO Example
+ */
 export default {
   name: "TodoList",
   data() {
@@ -126,6 +127,9 @@ export default {
   computed: {
     ...mapState("todo", ["todos", "visibility"]),
     ...mapGetters("todo", ["filteredTodos", "remaining"]),
+    /**
+     * Getter / Setter for Vuex "allDone" flag
+     */
     allDone: {
       get: function() {
         return this.remaining === 0;
@@ -139,6 +143,11 @@ export default {
   },
 
   filters: {
+    /**
+     * Adds an "s" character at the end of "item" if plural
+     * @param {number} n
+     * @returns {string}
+     */
     pluralize: function(n) {
       return n === 1 ? "item" : "items";
     }
@@ -147,17 +156,29 @@ export default {
   // methods that implement data logic.
   // note there's no DOM manipulation here at all.
   methods: {
+    /**
+     * Adds single todo item to Vuex storeage
+     * @param {Object} todo - new todo item
+     */
     addTodo: function(todo) {
       this.$store.dispatch("todo/addTodo", todo);
       this.newTodo = "";
     },
     ...mapActions("todo", ["removeTodo", "onFilterChange", "removeCompleted"]),
 
+    /**
+     * Edits single todo item
+     * @param {Object} - editable todo item
+     */
     editTodo: function(todo) {
       this.beforeEditCache = todo.title;
       this.editedTodo = todo;
     },
 
+    /**
+     * Finalizes edits on single todo item
+     * @param {Object} - editable todo item
+     */
     doneEdit: function(todo) {
       if (!this.editedTodo) {
         return;
@@ -169,6 +190,10 @@ export default {
       }
     },
 
+    /**
+     * Cancels edits on single todo item
+     * @param {Object} - editable todo item
+     */
     cancelEdit: function(todo) {
       this.editedTodo = null;
       todo.title = this.beforeEditCache;

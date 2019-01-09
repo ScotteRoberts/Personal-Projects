@@ -17,7 +17,7 @@ Example screenshots of the application.
 
 ### Full Display
 
-![Full Display](https://github.com/ScotteRoberts/markdown-here/raw/master/screenshots/FullDisplay.png)
+![Full Display](https://github.com/ScotteRoberts/Personal-Projects/blob/master/productivity/momentum-clone/screenshots/FullDisplay.png)
 
 ## Tech/Frameworks used
 

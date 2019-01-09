@@ -20,18 +20,7 @@
       </div>
     </div>
     <div class="column has-text-centered">
-      <!-- DEV: Quote -->
-      <div
-        v-if="showQuote"
-        class="content has-text-white"
-      >
-        <div>
-          "Appreciation is a wonderful thing: It makes what is excellent in others belong to us as well."
-        </div>
-        <div>
-          -- Voltaire
-        </div>
-      </div>
+      <quote-of-the-day v-if="showQuote" />
     </div>
     <div class="column is-pulled-down">
       <!-- DEV: Todo Menu -->
@@ -53,6 +42,7 @@
 <script>
 import { mapActions, mapState } from "vuex";
 import ReferralButton from "@/standalone/elements/ReferralButton";
+import QuoteOfTheDay from "@/standalone/components/QuoteOfTheDay";
 import SettingsMenu from "@/standalone/components/settings/Template";
 import TodoList from "@/standalone/components/TodoList";
 import DropdownMenu from "@/standalone/components/DropdownMenu";
@@ -67,11 +57,12 @@ export default {
       showTodos: state => state.show
     }),
     ...mapState("quote", {
-      showQuote: state => state.show
+      showQuote: state => state.showQOTD
     })
   },
   components: {
     ReferralButton,
+    QuoteOfTheDay,
     SettingsMenu,
     TodoList,
     DropdownMenu

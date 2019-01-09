@@ -1,6 +1,7 @@
 // DEV: Using Unsplash Developer API for photos.
 
 import Unsplash, { toJson } from "unsplash-js";
+import Vue from "vue";
 
 const unsplash = new Unsplash({
   applicationId: process.env.VUE_APP_UNSPLASH_ACCESS_KEY,
@@ -8,7 +9,7 @@ const unsplash = new Unsplash({
   callbackUrl: process.env.VUE_APP_UNSPLASH_CALLBACK_URL
 });
 
-const unsplashTransformer = function(response) {
+const unsplashTransformer = response => {
   return {
     id: response.id,
     artist: {
@@ -73,8 +74,8 @@ const actions = {
       .then(toJson)
       .then(unsplashResponse => {
         let transformedPhoto = unsplashTransformer(unsplashResponse);
-        // console.log("Transformed Photo", transformedPhoto);
         commit(mutationTypes.SET_CURRENT_PHOTO, transformedPhoto);
+        console.log("Time test", Vue.time(Date.now()));
       })
       .catch(error => {
         console.log(error);

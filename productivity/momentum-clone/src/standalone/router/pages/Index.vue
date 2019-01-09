@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { mapActions, mapState } from "vuex";
+import { mapState } from "vuex";
 import DefaultHeader from "@/standalone/layouts/default/Header";
 import DefaultGreeting from "@/standalone/layouts/default/Greeting";
 import DefaultFooter from "@/standalone/layouts/default/Footer";
@@ -44,9 +44,7 @@ export default {
     DefaultGreeting,
     DefaultFooter
   },
-  methods: {
-    ...mapActions([])
-  },
+  methods: {},
   mounted() {
     chrome.runtime.sendMessage({});
   }

@@ -48,10 +48,10 @@
 
     <div class="card-content">
       <div v-show="this.visibility === 'minutely'">
-        <line-graph />
+        <minutely-weather />
       </div>
       <div v-show="this.visibility === 'hourly'">
-        <line-graph />
+        <hourly-weather />
       </div>
       <div v-show="this.visibility === 'daily'">
         <daily-weather />
@@ -78,7 +78,8 @@
 <script>
 import { mapState } from "vuex";
 import DailyWeather from "@/standalone/components/weather/DailyWeather";
-import LineGraph from "@/standalone/components/weather/LineGraph";
+import HourlyWeather from "@/standalone/components/weather/HourlyWeather";
+import MinutelyWeather from "@/standalone/components/weather/MinutelyWeather";
 
 export default {
   name: "Weather",
@@ -100,9 +101,14 @@ export default {
   },
   components: {
     DailyWeather,
-    LineGraph
+    HourlyWeather,
+    MinutelyWeather
   },
   methods: {
+    /**
+     * Visibility filter for weather display
+     * @param {string} visibility - "minutely", "hourly", "daily" filter strings
+     */
     onFilterChange: function(visibility) {
       if (this.filters[visibility]) {
         this.visibility = visibility;
@@ -111,10 +117,17 @@ export default {
         this.visibility = "daily";
       }
     },
+    /**
+     * Calls ZipCodeAPI with Zip Code and ZipCodeAPI Key.
+     * Sets ZipCode in Vuex
+     * @param {number} zipCode - 5 digit zip code
+     */
     setLocation: function(zipCode) {
       this.$axios
         .get(
-          "https://www.zipcodeapi.com/rest/x3mOJ6Br6V2EKxp4hxY7c4wqRIriVz4NumqCcHJe4kquVE0kmKjFiUUVKDdBbOGC/info.json/" +
+          "https://www.zipcodeapi.com/rest/" +
+            process.env.VUE_APP_ZIP_CODE_API_KEY +
+            "/info.json/" +
             zipCode +
             "/us"
         )
@@ -127,23 +140,34 @@ export default {
           console.log(err);
         });
     },
+    /**
+     * Calls DarkSkyAPI with latitude, longitude, and DarkSkyAPI key.
+     * Sets weather data in Vuex.
+     * @param {number} latitude
+     * @param {number} longitude
+     */
     // TEST: Change to mounted section or interval calls.
     setWeather: function(latitude, longitude) {
       this.$axios
         .get(
-          "https://api.darksky.net/forecast/acfb84e0d47ca28cd75e2482545230a2/" +
+          "https://api.darksky.net/forecast/" +
+            process.env.VUE_APP_WEATHER_API_SECRET +
+            "/" +
             latitude +
             "," +
             longitude
         )
         .then(response => {
-          console.log(response);
+          console.log("Weather Response", response);
           this.$store.dispatch("weather/setWeather", response.data);
         })
         .catch(err => {
           console.log(err);
         });
     },
+    /**
+     * Clears Vuex weather module.
+     */
     resetGeographyModule: function() {
       this.$store.commit("geography/RESET_GEOGRAPHY_MODULE");
     }

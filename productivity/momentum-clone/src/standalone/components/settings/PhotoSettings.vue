@@ -15,8 +15,14 @@
 </template>
 
 <script>
+/**
+ * Background photo settings
+ */
 export default {
   methods: {
+    /**
+     * Updates the background photo with random photo through call to vuex.
+     */
     getRandomPhoto: function() {
       this.$store.dispatch("photo/setUnsplashRandomPhoto");
     }

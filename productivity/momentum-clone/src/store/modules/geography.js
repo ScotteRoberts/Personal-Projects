@@ -23,7 +23,7 @@ const getDefaultState = () => {
 
 const state = getDefaultState();
 
-const zipCodeApiTransformer = function(location) {
+const zipCodeApiTransformer = location => {
   return {
     zipCode: location.zip_code,
     latitude: location.lat,

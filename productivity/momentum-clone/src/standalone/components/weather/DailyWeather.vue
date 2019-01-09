@@ -38,6 +38,9 @@
 
 <script>
 import { mapState } from "vuex";
+/**
+ * Daily Weather Display
+ */
 export default {
   name: "DailyWeather",
   data() {
@@ -52,16 +55,25 @@ export default {
     }),
     ...mapState("weather", {
       currentWeather: state => state.forecast.currently,
-      dailyWeather: state => state.forecast.daily // Remove current day.
+      dailyWeather: state => state.forecast.daily
     }),
+    /** Abbreviates the days of the week to 3 characters
+     * @returns {string}
+     */
     dayNamesAbbr: function() {
       return this.dayNames.map(el => el.substring(0, 3));
     },
+    /** Today's string value
+     * @returns {string}
+     */
     today: function() {
       return this.dayNames[this.dayOfWeek];
     }
   },
   methods: {
+    /**
+     * Filters data stored in Vuex from DarkSkyAPI
+     */
     namedDailyWeather: function() {
       // DEV: Filtering out today and days beyond numOfDaysShown
       let week = this.dailyWeather.filter(
@@ -75,9 +87,6 @@ export default {
         week[i].name = this.dayNamesAbbr[(this.dayOfWeek + i + 1) % 7];
       }
       return week;
-    },
-    log: item => {
-      console.log(item);
     }
   }
 };

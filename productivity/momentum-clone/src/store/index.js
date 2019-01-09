@@ -1,7 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import VuexPersistence from "vuex-persist";
-import "../plugins/axios";
+import Axios from "../plugins/vueAxios.js";
+import VueMoment from "../plugins/vueMoment.js";
 
 // Modules
 // Core
@@ -23,6 +24,8 @@ import todo from "./modules/todo";
 import weather from "./modules/weather";
 
 Vue.use(Vuex);
+Vue.use(Axios);
+Vue.use(VueMoment);
 
 // Any information stored needed for multiple browser openings
 const vuexLocal = new VuexPersistence({

@@ -87,7 +87,6 @@
                 >
               </p>
             </div>
-            <p class="help">This is help text...</p>
           </div>
         </div>
       </div>
@@ -97,10 +96,9 @@
 
 <script>
 import { mapState, mapGetters, mapActions } from "vuex";
-// Full spec-compliant TodoMVC with localStorage persistence
-// and hash-based routing in ~120 effective lines of JavaScript.
-
-// vue component instance
+/**
+ * Website favorite links storage (addapted from a bookmarks bar)
+ */
 export default {
   name: "LinksList",
   // app initial state
@@ -116,30 +114,32 @@ export default {
     };
   },
 
-  // computed properties
-  // http://vuejs.org/guide/computed.html
   computed: {
     ...mapState("link", ["links", "visibility"]),
     ...mapGetters("link", ["filteredLinks"])
   },
 
-  // methods that implement data logic.
-  // note there's no DOM manipulation here at all.
+  // DEV: note there's no DOM manipulation here at all.
   methods: {
     ...mapActions("link", ["removeLink", "onFilterChange"]),
+
+    /**
+     * Dispatch call to store link item in Vuex.
+     * @param {Object} newLink - Link item
+     */
     addLink: function(newLink) {
       this.$store.dispatch("link/addLink", newLink);
       this.newLink.title = "";
       this.newLink.url = "";
     },
 
-    // TEST: Not functional yet...
+    /** Not Functional Yet */
     editLink: function(link) {
       this.beforeEditCache = link.title;
       this.editedLink = link;
     },
 
-    // TEST: Not functional yet...
+    /** Not Functional Yet */
     doneEdit: function(link) {
       if (!this.editedLink) {
         return;
@@ -151,7 +151,7 @@ export default {
       }
     },
 
-    // TEST: Not functional yet...
+    /** Not Functional Yet */
     cancelEdit: function(link) {
       this.editedLink = null;
       link.title = this.beforeEditCache;

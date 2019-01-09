@@ -62,6 +62,9 @@ export default {
     ...mapState("focus", {
       showFocus: state => state.show
     }),
+    /**
+     * Getter / Setter for nickname data
+     */
     nickname: {
       get() {
         return this.$store.state.account.nickname;
@@ -70,6 +73,9 @@ export default {
         this.setUsername(nickname);
       }
     },
+    /**
+     * Getter / Setter for username data
+     */
     username: {
       get() {
         return this.$store.state.account.username;

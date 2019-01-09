@@ -60,6 +60,9 @@ import MantraSettings from "@/standalone/components/settings/MantraSettings";
 import PhotoSettings from "@/standalone/components/settings/PhotoSettings";
 import QuoteSettings from "@/standalone/components/settings/QuoteSettings";
 import TodoSettings from "@/standalone/components/settings/TodoSettings";
+/**
+ * Setting Component Template
+ */
 export default {
   components: {
     BalanceSettings,

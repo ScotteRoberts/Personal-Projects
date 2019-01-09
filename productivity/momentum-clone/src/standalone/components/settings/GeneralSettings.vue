@@ -56,11 +56,15 @@
 
 <script>
 import { mapActions } from "vuex";
+/**
+ * Controls the display items in the application.
+ */
 export default {
   data() {
     return {};
   },
   computed: {
+    /** Getter / Setter for LinksList Component Visibility */
     showLinks: {
       get: function() {
         return this.$store.state.link.showLinks;
@@ -69,6 +73,10 @@ export default {
         this.$store.dispatch("link/setShowLinks", value);
       }
     },
+    /**
+     * Not Currently Supported:
+     * Getter / Setter for BookmarksBar Visibility
+     */
     showBookmarksBar: {
       get: function() {
         return this.$store.state.link.showBookmarksBar;
@@ -77,6 +85,7 @@ export default {
         this.$store.dispatch("link/setShowBookmarksBar", value);
       }
     },
+    /** Getter / Setter for Search Component Visibility */
     showSearch: {
       get: function() {
         return this.$store.state.search.show;
@@ -85,6 +94,7 @@ export default {
         this.$store.dispatch("search/setShow", value);
       }
     },
+    /** Getter / Setter for Weather Component Visibility */
     showWeather: {
       get: function() {
         return this.$store.state.weather.show;
@@ -93,6 +103,7 @@ export default {
         this.$store.dispatch("weather/setShow", value);
       }
     },
+    /** Getter / Setter for Daily Focus Component Visibility */
     showFocus: {
       get: function() {
         return this.$store.state.focus.show;
@@ -101,14 +112,16 @@ export default {
         this.$store.dispatch("focus/setShow", value);
       }
     },
+    /** Getter / Setter for Quote Component Visibility */
     showQuote: {
       get: function() {
-        return this.$store.state.quote.show;
+        return this.$store.state.quote.showQOTD;
       },
       set: function(value) {
         this.$store.dispatch("quote/setShow", value);
       }
     },
+    /** Getter / Setter for TodoList Component Visibility */
     showTodo: {
       get: function() {
         return this.$store.state.todo.show;

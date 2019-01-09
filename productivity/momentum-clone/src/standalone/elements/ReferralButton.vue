@@ -23,6 +23,7 @@ export default {
   computed: {
     ...mapState("photo", {
       artistName: state => state.currentPhoto.artist.fullName,
+      // DEV: Query string is for Unsplash recognition of artist
       artistProfile: state =>
         state.currentPhoto.artist.profile +
         "?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"

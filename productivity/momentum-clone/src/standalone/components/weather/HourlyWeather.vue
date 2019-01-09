@@ -1,12 +1,12 @@
 <template>
   <div>
-    Mantras
+    Hourly Weather
   </div>
 </template>
 
 <script>
 /**
- * Not Supported Yet
+ * @description Not Supported Yet
  */
 export default {};
 </script>

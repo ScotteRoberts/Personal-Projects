@@ -23,7 +23,7 @@ const mutationTypes = {
 };
 
 const mutations = {
-  [mutationTypes.RESET_STATE_ACCOUNT]: function(state) {
+  [mutationTypes.RESET_STATE_ACCOUNT](state) {
     Object.assign(state, getDefaultState());
   },
   [mutationTypes.UPDATE_NICKNAME](state, nickname) {
